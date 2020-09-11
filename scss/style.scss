@@ -1,0 +1,130 @@
+.hide{
+    display: none !important;
+}
+
+.car{
+width: 50px;
+height: 100px;
+background:transparent url(/img/player.png) center / cover no-repeat;
+position: absolute;
+bottom: 10px;
+}
+
+.enemy{
+    width: 50px;
+    height: 100px;
+    position: absolute;
+}
+
+.gameplace{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.gamearea{
+    width: 300px;
+    height: 100vh;
+    position: relative;
+    margin: auto;
+    background: #222;
+    overflow: hidden;
+}
+
+
+.line{
+    position: absolute;
+    width: 10px;
+    background:white;
+    left: 145px;
+}
+
+.startblock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: transparent url(/img/startmenu.svg) center / cover no-repeat;
+    background-size: 100%;
+        .start {
+            border: none;
+            background-color: #e74c3c;
+            box-shadow: 0px 5px 0px 0px #CE3323;
+             border-radius: 5px;
+             padding: 15px 10%;
+             font-size: 22px;
+             text-decoration: none;
+             color: #fff;
+             margin-left: 20px;
+             margin-top: 10px;
+             text-transform: uppercase;
+             letter-spacing: 10px;
+             &:active{
+                 transform: translate(0px, 5px);
+                 -webkit-transform: translate(0px, 5px);
+                 box-shadow: 0px 2px 0px 0px rgb(167, 13, 13);
+             }
+             &:hover{
+                 background-color: #FF6656;
+             }
+        }
+}
+
+.scoreblock{
+    position: absolute;
+    top: 45%;
+    left: 20%;
+    padding: 14px 16px;
+    background: rgba(158, 25, 25, 0.1);
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 600;
+    z-index: 200;
+    color: white;
+}
+
+.endscore{
+    text-align: center;
+    position: absolute;
+    top: 60%;
+    left: 45%;
+    color: white;
+    font-size: 35px;
+}
+
+@media (max-width:1600px){
+    .endscore{
+        font-size: 28px;
+    }
+}
+
+@media (max-width:1450px){
+    .endscore{
+        font-size: 20px;
+        font-weight: 900;
+        left: 46%;
+    }
+}
+
+@media (max-width:1260px){
+    .endscore{
+        top: 57%;
+        margin-top: 5px;
+    }
+}
+
+@media (max-width:1064px){
+    .startblock{
+        .start{
+            padding: 5px 5%;
+        }
+    }
+    .endscore{
+        left: 45%;
+        top:56%;
+    }
+}
